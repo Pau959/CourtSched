@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Recommendations — CourtSched Usability Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
     <li><a href="recommendations.html" class="active">Recommendations</a></li>
   </ul>
   <a class="nav-cta" href="index.html">Back to Home</a>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -31,32 +32,36 @@
 
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <span class="eyebrow-num" style="display:block;margin-bottom:.8rem">// 03</span>
-  <h1>Key Issues &amp; <em>Recommendations</em></h1>
+  <div class="eyebrow-row" style="margin-bottom:1.2rem">
+    <div class="eyebrow-chip">// 03</div>
+    <div class="eyebrow-rule"></div>
+    <span class="eyebrow-text">Results, Discussion &amp; Recommendations</span>
+  </div>
+  <h1>Key Issues &amp; <span>Recommendations</span></h1>
   <p class="lead">Based on the analysis of SUS scores, task performance data, and participant feedback, the following issues and design recommendations are proposed to improve the CourtSched prototype.</p>
 </div>
 
 <!-- KEY ISSUES -->
 <section class="section">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 03.01</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 03.01</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Key Issues Identified</span>
+      <span class="eyebrow-text">Key Issues Identified</span>
     </div>
-    <h2 class="section-title">What needs to be <em>fixed</em></h2>
-    <p class="section-lead">Six primary usability issues were identified through participant feedback and task performance analysis — ranked by priority based on frequency of mention and impact on task completion.</p>
+    <h2 class="sec-title">What needs to be <span>fixed</span></h2>
+    <p class="sec-lead">Six primary usability issues were identified through participant feedback and task performance analysis — ranked by priority based on frequency of mention and impact on task completion.</p>
   </div>
 
   <div style="margin-top:2rem" class="reveal">
     <div class="feedback-item" style="border-top:1px solid var(--line)">
       <span class="fi-num">01</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">Small and poorly placed interactive elements</strong> — Time slot buttons and tap targets are too small, causing difficulty especially for users with larger hands. Button placements are not intuitive, leading to confusion during the court reservation task.
+        <strong style="color:var(--white);font-weight:600">Small and poorly placed interactive elements</strong> — Time slot buttons and tap targets are too small, causing difficulty especially for users with larger hands. Button placements are not intuitive, leading to confusion during the court reservation task.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Task 02 — Court Reservation</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H3: User Control</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H5: Error Prevention</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Task 02 — Court Reservation</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H3: User Control</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H5: Error Prevention</span>
         </div>
       </div>
       <span class="fi-tag high">High Priority</span>
@@ -65,10 +70,10 @@
     <div class="feedback-item">
       <span class="fi-num">02</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">Slow response time and system delays</strong> — Participants reported minor lag during page transitions and after completing actions, which negatively impacted the perception of system quality and responsiveness.
+        <strong style="color:var(--white);font-weight:600">Slow response time and system delays</strong> — Participants reported minor lag during page transitions and after completing actions, which negatively impacted the perception of system quality and responsiveness.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">All Tasks</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H1: Visibility of System Status</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">All Tasks</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H1: Visibility of System Status</span>
         </div>
       </div>
       <span class="fi-tag high">High Priority</span>
@@ -77,10 +82,10 @@
     <div class="feedback-item">
       <span class="fi-num">03</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">Lack of feedback and confirmation messages</strong> — The system does not provide adequate confirmation after completing actions (e.g., saving a profile edit or submitting a booking), leaving users uncertain about whether their actions were successful.
+        <strong style="color:var(--white);font-weight:600">Lack of feedback and confirmation messages</strong> — The system does not provide adequate confirmation after completing actions (e.g., saving a profile edit or submitting a booking), leaving users uncertain about whether their actions were successful.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Task 02, Task 06</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H1: Visibility of System Status</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Task 02, Task 06</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H1: Visibility of System Status</span>
         </div>
       </div>
       <span class="fi-tag high">High Priority</span>
@@ -89,10 +94,10 @@
     <div class="feedback-item">
       <span class="fi-num">04</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">Accessibility settings are not discoverable</strong> — Several participants could not easily locate the accessibility settings panel. The feature lacks visual prominence, making it inaccessible to users who need it most.
+        <strong style="color:var(--white);font-weight:600">Accessibility settings are not discoverable</strong> — Several participants could not easily locate the accessibility settings panel. The feature lacks visual prominence, making it inaccessible to users who need it most.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Task 01 — Accessibility Settings</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H6: Recognition over Recall</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Task 01 — Accessibility Settings</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H6: Recognition over Recall</span>
         </div>
       </div>
       <span class="fi-tag med">Medium Priority</span>
@@ -101,10 +106,10 @@
     <div class="feedback-item">
       <span class="fi-num">05</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">Color palette inconsistencies and readability issues</strong> — The color choices received mixed feedback, with some users finding contrast insufficient or the color application inconsistent across screens, affecting visual clarity.
+        <strong style="color:var(--white);font-weight:600">Color palette inconsistencies and readability issues</strong> — The color choices received mixed feedback, with some users finding contrast insufficient or the color application inconsistent across screens, affecting visual clarity.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">All Tasks</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H4: Consistency &amp; Standards</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">All Tasks</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H4: Consistency &amp; Standards</span>
         </div>
       </div>
       <span class="fi-tag med">Medium Priority</span>
@@ -113,10 +118,10 @@
     <div class="feedback-item">
       <span class="fi-num">06</span>
       <div class="fi-text">
-        <strong style="color:var(--cream);font-weight:500">No onboarding guidance for first-time users</strong> — Users unfamiliar with digital scheduling systems — particularly older adults and those with limited tech literacy — lacked step-by-step guidance to get started with the system.
+        <strong style="color:var(--white);font-weight:600">No onboarding guidance for first-time users</strong> — Users unfamiliar with digital scheduling systems — particularly older adults and those with limited tech literacy — lacked step-by-step guidance to get started with the system.
         <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">All Tasks</span>
-          <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--cream3);border:1px solid var(--line2);padding:.2rem .6rem">Nielsen H10: Help &amp; Documentation</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">All Tasks</span>
+          <span style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line2);padding:.2rem .6rem;border-radius:6px">Nielsen H10: Help &amp; Documentation</span>
         </div>
       </div>
       <span class="fi-tag med">Medium Priority</span>
@@ -127,13 +132,13 @@
 <!-- RECOMMENDATIONS -->
 <section class="section alt">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 03.02</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 03.02</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Design Recommendations</span>
+      <span class="eyebrow-text">Design Recommendations</span>
     </div>
-    <h2 class="section-title">Recommended <em>design improvements</em></h2>
-    <p class="section-lead">Six concrete design improvement recommendations, mapped to the usability issues identified — each grounded in established HCI principles and participant feedback.</p>
+    <h2 class="sec-title">Recommended <span>design improvements</span></h2>
+    <p class="sec-lead">Six concrete design improvement recommendations, mapped to the usability issues identified — each grounded in established HCI principles and participant feedback.</p>
   </div>
 
   <div style="margin-top:2rem">
@@ -143,7 +148,7 @@
         <div class="exp-title">Increase Button Size &amp; Improve Layout</div>
       </div>
       <div>
-        <p class="exp-desc">Redesign interactive elements — particularly time slot buttons and action controls — to meet minimum touch target guidelines (at least 44×44px). Reorganize button placement to follow a logical, predictable layout that aligns with user expectations. Group related actions visually and ensure sufficient spacing between clickable elements to prevent accidental taps.</p>
+        <p class="exp-desc">Redesign interactive elements — particularly time slot buttons and action controls — to meet minimum touch target guidelines (at least 44x44px). Reorganize button placement to follow a logical, predictable layout that aligns with user expectations. Group related actions visually and ensure sufficient spacing between clickable elements to prevent accidental taps.</p>
         <div class="tag-list">
           <span class="tag-item">Minimum 44px Touch Targets</span>
           <span class="tag-item">Logical Button Grouping</span>
@@ -175,7 +180,7 @@
         <div class="exp-title">Optimize System Performance</div>
       </div>
       <div>
-        <p class="exp-desc">Address the reported response delays by optimizing page transition speeds, reducing unnecessary load times, and implementing skeleton loaders or transition animations to indicate progress. Where possible, leverage client-side caching and lazy loading to improve perceived performance. Even cosmetic improvements — such as smooth transitions — can significantly reduce user frustration during waiting periods.</p>
+        <p class="exp-desc">Address the reported response delays by optimizing page transition speeds, reducing unnecessary load times, and implementing skeleton loaders or transition animations to indicate progress. Where possible, leverage client-side caching and lazy loading to improve perceived performance. Even cosmetic improvements such as smooth transitions can significantly reduce user frustration during waiting periods.</p>
         <div class="tag-list">
           <span class="tag-item">Skeleton Loaders</span>
           <span class="tag-item">Lazy Loading</span>
@@ -239,13 +244,13 @@
 <!-- PRIORITY MATRIX -->
 <section class="section">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 03.03</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 03.03</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Implementation Priority</span>
+      <span class="eyebrow-text">Implementation Priority</span>
     </div>
-    <h2 class="section-title">Prioritized <em>Action Plan</em></h2>
-    <p class="section-lead">Recommendations organized by implementation priority to guide the development team in the next prototype iteration.</p>
+    <h2 class="sec-title">Prioritized <span>Action Plan</span></h2>
+    <p class="sec-lead">Recommendations organized by implementation priority to guide the development team in the next prototype iteration.</p>
   </div>
 
   <div class="reveal" style="overflow-x:auto">
@@ -262,52 +267,52 @@
       </thead>
       <tbody>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">01</td>
+          <td class="hl" style="font-family:var(--font-mono)">01</td>
           <td>Add confirmation &amp; feedback messages</td>
           <td>No system status feedback</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H1</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H1</td>
           <td><span class="badge badge-red">High</span></td>
-          <td style="color:#70c87a">Significantly reduces user uncertainty</td>
+          <td style="color:#70dd7a">Significantly reduces user uncertainty</td>
         </tr>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">02</td>
+          <td class="hl" style="font-family:var(--font-mono)">02</td>
           <td>Increase touch target sizes &amp; fix layout</td>
           <td>Small buttons, confusing placement</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H3, H5</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H3, H5</td>
           <td><span class="badge badge-red">High</span></td>
-          <td style="color:#70c87a">Reduces errors in Task 01 &amp; Task 02</td>
+          <td style="color:#70dd7a">Reduces errors in Task 01 &amp; Task 02</td>
         </tr>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">03</td>
+          <td class="hl" style="font-family:var(--font-mono)">03</td>
           <td>Optimize system performance &amp; transitions</td>
           <td>Slow response times</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H1</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H1</td>
           <td><span class="badge badge-red">High</span></td>
-          <td style="color:#70c87a">Improves overall perceived usability</td>
+          <td style="color:#70dd7a">Improves overall perceived usability</td>
         </tr>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">04</td>
+          <td class="hl" style="font-family:var(--font-mono)">04</td>
           <td>Improve accessibility settings discoverability</td>
           <td>Hidden accessibility panel</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H6</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H6</td>
           <td><span class="badge badge-gold">Medium</span></td>
-          <td style="color:var(--cream2)">Improves Task 01 satisfaction score</td>
+          <td style="color:var(--muted)">Improves Task 01 satisfaction score</td>
         </tr>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">05</td>
+          <td class="hl" style="font-family:var(--font-mono)">05</td>
           <td>Refine color system for WCAG compliance</td>
           <td>Color inconsistencies</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H4</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H4</td>
           <td><span class="badge badge-gold">Medium</span></td>
-          <td style="color:var(--cream2)">Improves readability and visual consistency</td>
+          <td style="color:var(--muted)">Improves readability and visual consistency</td>
         </tr>
         <tr>
-          <td class="hl" style="font-family:var(--mono)">06</td>
+          <td class="hl" style="font-family:var(--font-mono)">06</td>
           <td>Add onboarding flow, language options &amp; waitlist</td>
           <td>No guidance for new users</td>
-          <td style="font-family:var(--mono);font-size:.8rem">H10</td>
+          <td style="font-family:var(--font-mono);font-size:.8rem">H10</td>
           <td><span class="badge badge-green">Low</span></td>
-          <td style="color:var(--cream2)">Expands accessibility and inclusivity</td>
+          <td style="color:var(--muted)">Expands accessibility and inclusivity</td>
         </tr>
       </tbody>
     </table>
@@ -317,19 +322,19 @@
 <!-- CONCLUSION -->
 <section class="section alt">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 03.04</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 03.04</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Conclusion</span>
+      <span class="eyebrow-text">Conclusion</span>
     </div>
-    <h2 class="section-title">Overall <em>Assessment</em></h2>
+    <h2 class="sec-title">Overall <span>Assessment</span></h2>
   </div>
 
   <div class="two-col reveal">
     <div>
-      <p style="font-size:1rem;color:var(--cream2);line-height:1.95;margin-bottom:1.5rem">The CourtSched prototype demonstrates strong foundational usability with a 100% task completion rate and a System Usability Scale score of <strong style="color:var(--cream);font-weight:500">68.00— Grade C (OK)</strong>. All 40 participants successfully completed their assigned tasks within the allotted time, confirming that the system's core architecture is accessible and learnable.</p>
-      <p style="font-size:1rem;color:var(--cream2);line-height:1.95;margin-bottom:1.5rem">Viewing tasks — particularly View Notification (4.8/5) and View Schedule (4.7/5) — achieved the highest satisfaction scores, demonstrating that the system's information display design is well-executed. The calendar feature, transparent scheduling, and minimal interface design were consistently praised.</p>
-      <p style="font-size:1rem;color:var(--cream2);line-height:1.95">However, interactive tasks — especially the court reservation workflow — revealed opportunities for improvement in button layout, touch target sizing, system feedback, and performance. With targeted improvements focused on the six identified issues, the next iteration of CourtSched can realistically target a <strong style="color:var(--cream);font-weight:500">Grade A (Excellent)</strong> SUS rating.</p>
+      <p style="font-size:1rem;color:var(--muted);line-height:1.95;margin-bottom:1.5rem">The CourtSched prototype demonstrates strong foundational usability with a 100% task completion rate and a System Usability Scale score of <strong style="color:var(--white);font-weight:600">68.00 — Grade C (OK)</strong>. All 40 participants successfully completed their assigned tasks within the allotted time, confirming that the system's core architecture is accessible and learnable.</p>
+      <p style="font-size:1rem;color:var(--muted);line-height:1.95;margin-bottom:1.5rem">Viewing tasks — particularly View Notification (4.8/5) and View Schedule (4.7/5) — achieved the highest satisfaction scores, demonstrating that the system's information display design is well-executed. The calendar feature, transparent scheduling, and minimal interface design were consistently praised.</p>
+      <p style="font-size:1rem;color:var(--muted);line-height:1.95">However, interactive tasks — especially the court reservation workflow — revealed opportunities for improvement in button layout, touch target sizing, system feedback, and performance. With targeted improvements focused on the six identified issues, the next iteration of CourtSched can realistically target a <strong style="color:var(--white);font-weight:600">Grade A (Excellent)</strong> SUS rating.</p>
     </div>
     <div>
       <div class="pull-quote">
@@ -337,31 +342,31 @@
         <cite>— Group 7 Final Assessment</cite>
       </div>
 
-      <div style="margin-top:2.5rem;border:1px solid var(--line);padding:2rem">
-        <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream3);margin-bottom:1.5rem">Summary of Results</div>
-        <div class="bar-row"><span class="bar-label">SUS Score</span><div class="bar-track"><div class="bar-fill" style="width:79.63%"></div></div><span class="bar-val">68.00</span></div>
+      <div style="margin-top:2.5rem;border:1px solid var(--line2);border-radius:12px;padding:2rem;background:var(--surface)">
+        <div style="font-family:var(--font-mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem">Summary of Results</div>
+        <div class="bar-row"><span class="bar-label">SUS Score</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="bar-val">68.00</span></div>
         <div class="bar-row"><span class="bar-label">Task Completion Rate</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">100%</span></div>
         <div class="bar-row"><span class="bar-label">Overall Satisfaction</span><div class="bar-track"><div class="bar-fill" style="width:91.3%"></div></div><span class="bar-val">4.57/5</span></div>
         <div class="bar-row"><span class="bar-label">Best Task Score</span><div class="bar-track"><div class="bar-fill" style="width:96%"></div></div><span class="bar-val">4.8/5</span></div>
       </div>
 
-      <div style="margin-top:1.5rem;display:flex;gap:1rem">
-        <a href="results.html" class="btn-primary">View Full Results</a>
-        <a href="data-gathering.html" class="btn-ghost">Data Gathering</a>
+      <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="results.html" class="btn-primary">View Full Results &#8594;</a>
+        <a href="data-gathering.html" class="btn-ghost">Data Gathering &#8599;</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-brand">Court<span>Sched</span> &mdash; Usability Report</div>
+  <div class="footer-brand">Court<span>Sched</span></div>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="data-gathering.html">Data</a></li>
     <li><a href="results.html">Results</a></li>
     <li><a href="recommendations.html">Recommendations</a></li>
   </ul>
-  <div class="footer-copy">Group 7 &mdash; Partido State University &mdash; HCI2</div>
+  <div class="footer-copy">Group 7 — Partido State University — HCI2</div>
 </footer>
 
 <script>

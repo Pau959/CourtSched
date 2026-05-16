@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CourtSched — Usability Evaluation Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a class="nav-brand" href="index.html">Court<span>Sched</span></a>
   <ul class="nav-links">
@@ -18,12 +18,11 @@
     <li><a href="recommendations.html">Recommendations</a></li>
   </ul>
   <a class="nav-cta" href="results.html">View Results</a>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html" onclick="toggleMenu()">Home</a>
   <a href="data-gathering.html" onclick="toggleMenu()">Data Gathering</a>
@@ -33,115 +32,167 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-side-text">HCI2 &mdash; Partido State University &mdash; Group 7</div>
-  <div class="hero-counter">// 00 &nbsp;&nbsp; Usability Evaluation Report</div>
-  <h1>Court<em>Sched</em><br>System</h1>
-  <p class="hero-sub">A comprehensive usability evaluation of the Court Scheduling System prototype — tested with 40 respondents across 6 core tasks.</p>
-
-  <div class="hero-meta">
-    <div class="hero-stat">
-      <div class="val">40</div>
-      <div class="lbl">Respondents</div>
-    </div>
-    <div class="hero-stat">
-      <div class="val">68<em>.00</em></div>
-      <div class="lbl">SUS Score</div>
-    </div>
-    <div class="hero-stat">
-      <div class="val">100<em>%</em></div>
-      <div class="lbl">Task Completion</div>
-    </div>
-    <div class="hero-stat">
-      <div class="val">4.57<em>/5</em></div>
-      <div class="lbl">Avg Satisfaction</div>
-    </div>
+  <div class="hero-bg"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-eyebrow">
+    <div class="hero-pill">HCI2 &mdash; Group 7</div>
+    <span class="hero-line-tag">// Partido State University &mdash; Usability Evaluation</span>
   </div>
-
+  <h1>
+    <span class="line1">CourtSched</span><br>
+    <span class="highlight">System Report</span>
+  </h1>
+  <p class="hero-sub">A comprehensive usability evaluation of the Court Scheduling System prototype — tested with 40 respondents across 6 core tasks using Jakob Nielsen's heuristics and SUS methodology.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="val">40</div><div class="lbl">Respondents</div></div>
+    <div class="hero-stat"><div class="val">68<em>.00</em></div><div class="lbl">SUS Score</div></div>
+    <div class="hero-stat"><div class="val">100<em>%</em></div><div class="lbl">Task Completion</div></div>
+    <div class="hero-stat"><div class="val">4.57<em>/5</em></div><div class="lbl">Avg Satisfaction</div></div>
+  </div>
   <div class="hero-actions">
-    <a class="btn-primary" href="results.html">Explore Results</a>
-    <a class="btn-ghost" href="data-gathering.html">View Data Gathering</a>
+    <a class="btn-primary" href="results.html">Explore Results <span class="arr">&#8594;</span></a>
+    <a class="btn-ghost" href="data-gathering.html">View Data Gathering &#8599;</a>
   </div>
-  <div class="scroll-hint">Scroll to explore</div>
+  <div class="hero-badge">
+    <div class="badge-ring">C</div>
+    <div class="grade-lbl">SUS Grade</div>
+    <div class="grade-desc">Marginally Acceptable</div>
+  </div>
+</section>
+
+<!-- ── PROTOTYPE SCREENSHOT (Required by rubric: Home Page must include screenshot or logo) ── -->
+<section class="section alt">
+  <div class="section-head reveal">
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 00</div>
+      <div class="eyebrow-rule"></div>
+      <span class="eyebrow-text">The Prototype</span>
+    </div>
+    <h2 class="sec-title">CourtSched <span>Prototype</span> Screenshots</h2>
+    <p class="sec-lead">Key screens of the CourtSched mobile prototype evaluated in this usability study — covering the main dashboard, court reservation, schedule calendar, notifications, and profile.</p>
+  </div>
+
+  <div class="reveal" style="margin-top:3rem">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem">
+
+      <div style="background:var(--surface);border:1px solid var(--line2);border-radius:16px;overflow:hidden">
+
+        <!-- YOUR ACTUAL SCREENSHOT HERE -->
+        <div style="overflow:hidden;height:180px;">
+          <img src="prototype/homeDashboard.png" alt="Home Dashboard"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        </div>
+
+        <div style="padding:1.2rem">
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--neon);margin-bottom:.4rem">Screen 01</div>
+          <div style="font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:.4rem">Home Dashboard</div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.65">Main hub with court availability overview and quick-access booking.</p>
+        </div>
+
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--line2);border-radius:16px;overflow:hidden">
+
+        <!-- YOUR ACTUAL SCREENSHOT HERE -->
+        <div style="overflow:hidden;height:180px;">
+          <img src="prototype/reserveCourt.png" alt="Home Dashboard"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        </div>
+
+        <div style="padding:1.2rem">
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--neon);margin-bottom:.4rem">Screen 01</div>
+          <div style="font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:.4rem">Home Dashboard</div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.65">Main hub with court availability overview and quick-access booking.</p>
+        </div>
+
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--line2);border-radius:16px;overflow:hidden">
+
+        <!-- YOUR ACTUAL SCREENSHOT HERE -->
+        <div style="overflow:hidden;height:180px;">
+          <img src="prototype/calendar.png" alt="Home Dashboard"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        </div>
+
+        <div style="padding:1.2rem">
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--neon);margin-bottom:.4rem">Screen 01</div>
+          <div style="font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:.4rem">Home Dashboard</div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.65">Main hub with court availability overview and quick-access booking.</p>
+        </div>
+
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--line2);border-radius:16px;overflow:hidden">
+
+        <!-- YOUR ACTUAL SCREENSHOT HERE -->
+        <div style="overflow:hidden;height:180px;">
+          <img src="prototype/notification.png" alt="Home Dashboard"
+              style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        </div>
+
+        <div style="padding:1.2rem">
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--neon);margin-bottom:.4rem">Screen 01</div>
+          <div style="font-family:var(--font-head);font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:.4rem">Home Dashboard</div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.65">Main hub with court availability overview and quick-access booking.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <p style="margin-top:1.5rem;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.08em;color:var(--muted)">Note: Screens above are representative UI mockups of the prototype. Replace with actual prototype screenshots when submitting the deployed site.</p>
+  </div>
 </section>
 
 <!-- OVERVIEW -->
 <section class="section">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 01</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 01</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Project Overview</span>
+      <span class="eyebrow-text">Project Overview</span>
     </div>
-    <h2 class="section-title">A prototype built to <em>simplify</em> court scheduling for everyone</h2>
-    <p class="section-lead">The CourtSched System is a prototype designed to streamline the process of reserving courts for sports, events, and community activities — making scheduling faster, fairer, and more accessible.</p>
+    <h2 class="sec-title">A prototype built to <span>simplify</span> court scheduling for everyone</h2>
+    <p class="sec-lead">CourtSched is designed to streamline the reservation of courts for sports, events, and community activities — making scheduling faster, fairer, and more accessible.</p>
   </div>
 
   <div class="two-col reveal">
     <div>
-      <div class="expertise-block" style="border-top:none;padding-top:0">
+      <div class="block-item">
+        <div><span class="block-num">// 01</span><div class="block-title">The Problem</div></div>
         <div>
-          <span class="exp-counter">// 01</span>
-          <div class="exp-title">The Problem</div>
-        </div>
-        <div>
-          <p class="exp-desc">Court scheduling has traditionally been plagued by manual processes, scheduling conflicts, and lack of transparency — leaving athletes, event organizers, and community members frustrated with slow and biased reservation systems.</p>
-          <div class="tag-list">
-            <span class="tag-item">Manual Booking</span>
-            <span class="tag-item">Scheduling Conflicts</span>
-            <span class="tag-item">Lack of Transparency</span>
-            <span class="tag-item">Poor Accessibility</span>
-          </div>
+          <p class="block-desc">Court scheduling has traditionally been plagued by manual processes, scheduling conflicts, and lack of transparency — leaving athletes, event organizers, and community members frustrated with slow and biased reservation systems.</p>
+          <div class="tag-list"><span class="tag">Manual Booking</span><span class="tag">Scheduling Conflicts</span><span class="tag">Lack of Transparency</span><span class="tag">Poor Accessibility</span></div>
         </div>
       </div>
-      <div class="expertise-block">
+      <div class="block-item">
+        <div><span class="block-num">// 02</span><div class="block-title">The Solution</div></div>
         <div>
-          <span class="exp-counter">// 02</span>
-          <div class="exp-title">The Solution</div>
-        </div>
-        <div>
-          <p class="exp-desc">CourtSched offers a digital platform where users can reserve courts, check availability through a calendar view, track their requests, and receive notifications — all within a clean, minimal interface designed for ease of use.</p>
-          <div class="tag-list">
-            <span class="tag-item">Court Reservation</span>
-            <span class="tag-item">Calendar View</span>
-            <span class="tag-item">Request Tracking</span>
-            <span class="tag-item">Notifications</span>
-            <span class="tag-item">Profile Management</span>
-          </div>
+          <p class="block-desc">CourtSched offers a digital platform where users can reserve courts, check availability through a calendar view, track their requests, and receive notifications — all within a clean interface designed for ease of use.</p>
+          <div class="tag-list"><span class="tag">Court Reservation</span><span class="tag">Calendar View</span><span class="tag">Request Tracking</span><span class="tag">Notifications</span><span class="tag">Profile Management</span></div>
         </div>
       </div>
-      <div class="expertise-block">
+      <div class="block-item">
+        <div><span class="block-num">// 03</span><div class="block-title">Evaluation Method</div></div>
         <div>
-          <span class="exp-counter">// 03</span>
-          <div class="exp-title">Evaluation Method</div>
-        </div>
-        <div>
-          <p class="exp-desc">We conducted a structured usability evaluation combining Jakob Nielsen's 10 Heuristics and a System Usability Scale (SUS) questionnaire administered to 40 participants who performed 6 core tasks on the prototype.</p>
-          <div class="tag-list">
-            <span class="tag-item">Heuristic Evaluation</span>
-            <span class="tag-item">SUS Questionnaire</span>
-            <span class="tag-item">Task-Based Testing</span>
-            <span class="tag-item">Open-Ended Feedback</span>
-          </div>
+          <p class="block-desc">We conducted a structured usability evaluation combining Jakob Nielsen's 10 Heuristics and a System Usability Scale (SUS) questionnaire administered to 40 participants who performed 6 core tasks on the prototype.</p>
+          <div class="tag-list"><span class="tag">Heuristic Evaluation</span><span class="tag">SUS Questionnaire</span><span class="tag">Task-Based Testing</span><span class="tag">Open-Ended Feedback</span></div>
         </div>
       </div>
     </div>
-
     <div>
       <div class="pull-quote">
         <p>"From the usability test results, most participants found the system convenient, transparent, and easy to use — especially for faster and more organized reservations."</p>
         <cite>— Group 7 Summarized Usability Test Report</cite>
       </div>
-      <div style="margin-top:3rem">
-        <div class="section-eyebrow">
-          <span class="eyebrow-num">Tasks Evaluated</span>
-          <div class="eyebrow-rule"></div>
-        </div>
-        <div class="bar-row"><span class="bar-label">Adjust Accessibility Settings</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span class="bar-val">4.4/5</span></div>
-        <div class="bar-row"><span class="bar-label">Court Reservation</span><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><span class="bar-val">4.3/5</span></div>
-        <div class="bar-row"><span class="bar-label">View Schedule</span><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div><span class="bar-val">4.7/5</span></div>
-        <div class="bar-row"><span class="bar-label">View Request</span><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div><span class="bar-val">4.7/5</span></div>
-        <div class="bar-row"><span class="bar-label">View Notification</span><div class="bar-track"><div class="bar-fill" style="width:96%"></div></div><span class="bar-val">4.8/5</span></div>
-        <div class="bar-row"><span class="bar-label">Edit Profile</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><span class="bar-val">4.5/5</span></div>
+      <div class="bar-section">
+        <div class="eyebrow-row" style="margin-bottom:1.5rem"><span class="eyebrow-text">Task Satisfaction Ratings</span><div class="eyebrow-rule" style="max-width:none;flex:1"></div></div>
+        <div><div class="label-row"><span class="bar-lbl">Accessibility Settings</span><span class="bar-val">4.4/5</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+        <div><div class="label-row"><span class="bar-lbl">Court Reservation</span><span class="bar-val">4.3/5</span></div><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div></div>
+        <div><div class="label-row"><span class="bar-lbl">View Schedule</span><span class="bar-val">4.7/5</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+        <div><div class="label-row"><span class="bar-lbl">View Request</span><span class="bar-val">4.7/5</span></div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div></div>
+        <div><div class="label-row"><span class="bar-lbl">View Notification</span><span class="bar-val">4.8/5</span></div><div class="bar-track"><div class="bar-fill" style="width:96%"></div></div></div>
+        <div><div class="label-row"><span class="bar-lbl">Edit Profile</span><span class="bar-val">4.5/5</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
       </div>
     </div>
   </div>
@@ -149,123 +200,111 @@
 
 <!-- STAT BAND -->
 <div class="stat-band reveal">
-  <div class="stat-item">
-    <div class="big">40</div>
-    <div class="cap">Total Respondents</div>
-  </div>
-  <div class="stat-item">
-    <div class="big">6</div>
-    <div class="cap">Tasks Evaluated</div>
-  </div>
-  <div class="stat-item">
-    <div class="big">68<em>.00</em></div>
-    <div class="cap">Average SUS Score</div>
-  </div>
-  <div class="stat-item">
-    <div class="big"><em>C</em></div>
-    <div class="cap">SUS Grade — Ok</div>
-  </div>
+  <div class="stat-item"><div class="big">40</div><div class="cap">Total Respondents</div></div>
+  <div class="stat-item"><div class="big">6</div><div class="cap">Tasks Evaluated</div></div>
+  <div class="stat-item"><div class="big">68<em>.00</em></div><div class="cap">Average SUS Score</div></div>
+  <div class="stat-item"><div class="big"><em>C</em></div><div class="cap">SUS Grade — Ok</div></div>
 </div>
 
-<!-- TEAM SECTION -->
+<!-- TEAM (Required: names, roles, photos) -->
 <section class="section alt">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 02</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 02</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">The Team</span>
+      <span class="eyebrow-text">The Team</span>
     </div>
-    <h2 class="section-title">Group 7 — <em>Computational Sciences</em></h2>
-    <p class="section-lead">Partido State University · College of Engineering and Computational Sciences · HCI2 – Human-Computer Interaction</p>
+    <h2 class="sec-title">Group 7 — <span>Computational Sciences</span></h2>
+    <p class="sec-lead">Partido State University &middot; College of Engineering and Computational Sciences &middot; HCI2 – Human-Computer Interaction</p>
   </div>
 
   <div class="member-grid reveal">
     <div class="member-card">
-      <div class="member-avatar"><img src="images/paulineJoy.jpg" alt="" style="border-radius: 50%; height: 100%; width: 100%;" ></div>
+      <div class="member-avatar"><img src="members/piloneo.jpg" alt="Pauline Joy R. Piloneo" onerror="this.style.display='none';this.parentNode.textContent='PJ'"></div>
       <div class="member-name">Pauline Joy R. Piloneo</div>
       <div class="member-role">Group Leader</div>
       <div class="member-desc">Oversees project coordination, usability evaluation planning, and group deliverables.</div>
     </div>
     <div class="member-card">
-      <div class="member-avatar"><img src="images/christoper.jpg" alt="" style="border-radius: 50%; height: 100%; width: 100%;" ></div>
+      <div class="member-avatar"><img src="members/lagatic.jfif" alt="Christopher P. Lagatic" onerror="this.style.display='none';this.parentNode.textContent='CL'"></div>
       <div class="member-name">Christopher P. Lagatic</div>
-      <div class="member-role">UI Desginer / Evaluator</div>
-      <div class="member-desc">Prototype development and Interface Design</div>
+      <div class="member-role">UI Designer / Evaluator</div>
+      <div class="member-desc">Prototype development and interface design.</div>
     </div>
     <div class="member-card">
-      <div class="member-avatar"><img src="images/cienna.jpg" alt="" style="border-radius: 50%; height: 100%; width: 100%;" ></div>
+      <div class="member-avatar"><img src="members/peley.jfif" alt="Cienna Angela V. Peley" onerror="this.style.display='none';this.parentNode.textContent='CP'"></div>
       <div class="member-name">Cienna Angela V. Peley</div>
       <div class="member-role">Tester / Evaluator</div>
       <div class="member-desc">Usability test facilitation and participant management.</div>
     </div>
     <div class="member-card">
-      <div class="member-avatar"><img src="images/zaira.jpg" alt="" style="border-radius: 50%; height: 100%; width: 100%;" ></div>
+      <div class="member-avatar"><img src="members/remalla.jpg" alt="Zaira D. Remalla" onerror="this.style.display='none';this.parentNode.textContent='ZR'"></div>
       <div class="member-name">Zaira D. Remalla</div>
       <div class="member-role">Evaluator</div>
-      <div class="member-desc">SUS Data Collection and Analysis</div>
+      <div class="member-desc">SUS data collection and analysis.</div>
     </div>
     <div class="member-card">
-      <div class="member-avatar"><img src="images/" alt="" style="border-radius: 50%; height: 100%; width: 100%;" ></div>
+      <div class="member-avatar" style="font-size:1.4rem">AJ</div>
       <div class="member-name">Aeron Jay A. Tapia</div>
       <div class="member-role">Documentation</div>
       <div class="member-desc">Reporting, documentation, and web report development.</div>
     </div>
   </div>
 
-  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);display:flex;gap:3rem;align-items:center;flex-wrap:wrap" class="reveal">
-    <div>
-      <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream3);margin-bottom:.4rem">Course Instructor</div>
-      <div style="font-family:var(--serif);font-size:1.2rem;color:var(--cream)">Michael B. Amata</div>
-      <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;color:var(--gold)">Computational Sciences Department</div>
+  <div class="info-strip reveal">
+    <div class="info-item">
+      <span class="info-label">Course Instructor</span>
+      <span class="info-val">Michael B. Amata</span>
+      <span class="info-sub">Computational Sciences Department</span>
     </div>
-    <div style="width:1px;height:50px;background:var(--line)"></div>
-    <div>
-      <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream3);margin-bottom:.4rem">Contact</div>
-      <div style="font-size:.92rem;color:var(--cream2)">piloneopaulinejoy6@gmail.com</div>
+    <div class="info-divider"></div>
+    <div class="info-item">
+      <span class="info-label">Contact</span>
+      <span class="info-val">piloneopaulinejoy6@gmail.com</span>
     </div>
-    <div style="width:1px;height:50px;background:var(--line)"></div>
-    <div>
-      <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream3);margin-bottom:.4rem">Institution</div>
-      <div style="font-size:.92rem;color:var(--cream2)">Partido State University, Goa, Camarines Sur</div>
+    <div class="info-divider"></div>
+    <div class="info-item">
+      <span class="info-label">Institution</span>
+      <span class="info-val">Partido State University</span>
+      <span class="info-sub">Goa, Camarines Sur</span>
     </div>
   </div>
 </section>
 
-<!-- NAVIGATION CARDS -->
+<!-- REPORT SECTIONS -->
 <section class="section">
   <div class="section-head reveal">
-    <div class="section-eyebrow">
-      <span class="eyebrow-num">// 03</span>
+    <div class="eyebrow-row">
+      <div class="eyebrow-chip">// 03</div>
       <div class="eyebrow-rule"></div>
-      <span class="eyebrow-label">Report Sections</span>
+      <span class="eyebrow-text">Report Sections</span>
     </div>
-    <h2 class="section-title">Explore the <em>full evaluation</em></h2>
+    <h2 class="sec-title">Explore the <span>full evaluation</span></h2>
   </div>
   <div class="card-wrap reveal">
-    <a href="data-gathering.html" class="card" style="text-decoration:none">
+    <a href="data-gathering.html" class="card">
       <span class="card-num">01 &mdash;</span>
       <h3>Data Gathering</h3>
-      <p>Consent forms, respondent profiles, SUS questionnaire instruments, and testing documentation including photos and supporting materials.</p>
-      <span class="card-tag">View Section →</span>
+      <p>Consent forms, respondent profiles, SUS instruments, heuristic evaluation workbook, testing photos, and all supporting documentation.</p>
+      <span class="card-arrow">View Section &#8594;</span>
     </a>
-    <a href="results.html" class="card" style="text-decoration:none">
+    <a href="results.html" class="card">
       <span class="card-num">02 &mdash;</span>
-      <h3>Results & Discussion</h3>
+      <h3>Results &amp; Discussion</h3>
       <p>Full SUS score breakdown, task completion data, satisfaction ratings per task, and participant feedback analysis from all 40 respondents.</p>
-      <span class="card-tag">View Section →</span>
+      <span class="card-arrow">View Section &#8594;</span>
     </a>
-    <a href="recommendations.html" class="card" style="text-decoration:none">
+    <a href="recommendations.html" class="card">
       <span class="card-num">03 &mdash;</span>
       <h3>Recommendations</h3>
       <p>Key issues identified, discussion of findings, and concrete design improvement recommendations to enhance the usability of CourtSched.</p>
-      <span class="card-tag">View Section →</span>
+      <span class="card-arrow">View Section &#8594;</span>
     </a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Court<span>Sched</span> &mdash; Usability Report</div>
+  <div class="footer-brand">Court<span>Sched</span></div>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="data-gathering.html">Data</a></li>
@@ -278,7 +317,9 @@
 <script>
 function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
 const reveals=document.querySelectorAll('.reveal');
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})
+},{threshold:.08});
 reveals.forEach(r=>obs.observe(r));
 </script>
 </body>
